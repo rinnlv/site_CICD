@@ -12,7 +12,7 @@ permissions:
   pages: write # разрешение на публикацию в Pages
   id-token: write # OIDC-токен для подтверждения деплоя
   
-jobs:
+jobs
   deploy: # задание: собрать и опубликовать сайт
     runs-on: ubuntu-latest # виртуальная машина-исполнитель
     environment:
