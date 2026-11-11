@@ -12,7 +12,7 @@ permissions:
   pages: write # разрешение на публикацию в Pages
   id-token: write # OIDC-токен для подтверждения деплоя
   
-jobs
+jobs:
   deploy: # задание: собрать и опубликовать сайт
     runs-on: ubuntu-latest # виртуальная машина-исполнитель
     environment:
@@ -20,7 +20,7 @@ jobs
       # ссылка на опубликованный сайт появится в сводке запуска
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    Шаг 1. Скопировать файлы репозитория на виртуальную машину
+      # Шаг 1. Скопировать файлы репозитория на виртуальную машину
       - name: Checkout repository
         uses: actions/checkout@v4
           
